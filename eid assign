@@ -1,0 +1,409 @@
+
+1. Calculate Area of a Circle
+Write a Python program which accepts the radius of a circle from the user and compute the area.
+Program Console Sample Output 1:
+Input Radius: 0.5
+Area of Circle with radius 0.5 is 0.7853981634
+
+In [10]:print("Area of the circle ==> πr^2")
+rad = float(input("Enter the radius of circle = "))
+area = 3.14159 * (rad * rad)
+print("Area of Circle with radius " + str(rad) + " is " + str(area))
+Area of the circle ==> πr^2
+
+Enter the radius of circle = 0.5
+Area of Circle with radius 0.5 is 0.7853975
+
+2. Check Number either positive, negative or zero
+Write a Python program to check if a number is positive, negative or zero
+Program Console Sample Output 1:
+Enter Number: -1
+Negative Number Entered
+Program Console Sample Output 2:
+Integer: 3
+Positive Number Entered
+Program Console Sample Output 3:
+Integer: 0
+Zero Entered
+In [1]:print("Check Number either positive, negative or zero")
+num = int(input("Plz enter any number: "))
+if num > 0:
+    print("Positive Number Entered")
+elif num < 0:
+    print("Negative Number Entered")
+elif num == 0:
+    print("Zero Entered")
+else:
+    print("Number is out of range")
+
+Check Number either positive, negative or zero
+Plz enter any number: -1
+Negative Number Entered
+
+In [2]:print("Check Number either positive, negative or zero")
+num = int(input("Plz enter any number: "))
+if num > 0:
+    print("Positive Number Entered")
+elif num < 0:
+    print("Negative Number Entered")
+elif num == 0:
+    print("Zero Entered")
+else:
+    print("Number is out of range")
+
+Check Number either positive, negative or zero
+Plz enter any number: 3
+Positive Number Entered
+
+In [3]:print("Check Number either positive, negative or zero")
+num = int(input("Plz enter any number: "))
+if num > 0:
+    print("Positive Number Entered")
+elif num < 0:
+    print("Negative Number Entered")
+elif num == 0:
+    print("Zero Entered")
+else:
+    print("Number is out of range")
+
+Check Number either positive, negative or zero
+Plz enter any number: 0
+Zero Entered
+
+3. Divisibility Check of two numbers
+Write a Python program to check whether a number is completely divisible by another number. Accept two integer values form the user
+Program Console Sample Output 1:
+Enter numerator: 4
+Enter Denominator: 2
+Number 4 is Completely divisible by 2
+Program Console Sample Output 2:
+Enter numerator: 7
+Enter Denominator: 4
+Number 7 is not Completely divisible by 4
+In [6]:print("Divisibility Check of two numbers")
+num1 = int(input("Enter Numerator: "))
+num2 = int(input("Enter Denominator: "))
+if (num1 % num2) == 0:
+    print("Number " + str(num1) + " is Completely divisible by " + str(num2))
+else:
+    print("Number " + str(num1) + " is not Completely divisible by " + str(num2))
+
+Divisibility Check of two numbers
+Enter Numerator: 4
+Enter Denominator: 2
+Number 4 is Completely divisible by 2
+In [5]:print("Divisibility Check of two numbers")
+num1 = int(input("Enter Numerator: "))
+num2 = int(input("Enter Denominator: "))
+if (num1 % num2) == 0:
+    print("Number " + str(num1) + " is Completely divisible by " + str(num2))
+else:
+    print("Number " + str(num1) + " is not Completely divisible by " + str(num2))
+
+Divisibility Check of two numbers
+Enter Numerator: 7
+Enter Denominator: 4
+Number 7 is not Completely divisible by 4
+
+4. Calculate Volume of a sphere
+Write a Python program to get the volume of a sphere, please take the radius as input from user
+Program Console Output:
+Enter Radius of Sphere: 1
+Volume of the Sphere with Radius 1 is 4.18
+
+In [11]:print("Volume of a sphere ==> = (4/3)πr^3")
+rad = float(input("Enter the radius of sphere = "))
+vol = ((4/3) * 3.14159 * (rad * rad * rad))
+print("Volume of the sphere with radius " + str(rad) + " is " + str(vol))
+
+Volume of a sphere ==> = (4/3)πr^3
+Enter the radius of sphere = 1
+Volume of the sphere with radius 1.0 is 4.188786666666666
+
+
+5. Copy string n times
+Write a Python program to get a string which is n (non-negative integer) copies of a given string.
+Program Console Output:
+Enter String: Hi
+How many copies of String you need: 4
+4 Copies of Hi are HiHiHiHi
+In [16]:print("Copy string n times")
+ipt = input("Enter String: ")
+cop = int(input("How many copies of String you need: "))
+if cop >= 0:
+    copies = cop * ipt
+    print(str(cop) + " Copies of " + ipt + " are " + copies)
+else:
+    print("You enter invalid range")
+
+
+Copy string n times
+Enter String: Hi
+How many copies of String you need: 4
+4 Copies of Hi are HiHiHiHi
+
+In [17]:print("Copy string n times")
+ipt = input("Enter String: ")
+cop = int(input("How many copies of String you need: "))
+if cop >= 0:
+    copies = cop * ipt
+    print(str(cop) + " Copies of " + ipt + " are " + copies)
+else:
+    print("You enter invalid range")
+
+Copy string n times
+Enter String: Hi
+How many copies of String you need: -5
+You enter invalid range
+
+6. Check if number is Even or Odd
+Write a Python program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user
+Program Console Output 1:
+Enter Number: 4
+4 is Even
+Program Console Output 2:
+Enter Number: 9
+9 is Odd
+
+In [19]:print("Check if number is Even or Odd")
+num1 = int(input('Enter Number: '))
+cond = num1 % 2
+if cond == 0:
+    print(str(num1) + ' is Even')
+else:
+    print(str(num1) + ' is Odd')
+
+Check if number is Even or Odd
+Enter Number: 4
+4 is Even
+
+In [20]:print("Check if number is Even or Odd")
+num1 = int(input('Enter Number: '))
+cond = num1 % 2
+if cond == 0:
+    print(str(num1) + ' is Even')
+else:
+    print(str(num1) + ' is Odd')
+
+Check if number is Even or Odd
+Enter Number: 9
+9 is Odd
+
+
+7. Vowel Tester
+Write a Python program to test whether a passed letter is a vowel or not
+Program Console Output 1:
+Enter a character: A
+Letter A is Vowel
+Program Console Output 2:
+Enter a character: e
+Letter e is Vowel
+Program Console Output 2:
+Enter a character: N
+Letter N is not Vowel
+
+In [26]:print("Vowel Tester")
+chara = input("Enter a character: ")
+char = chara.lower()
+if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+    print("Letter " + chara + " is a Vowel")
+else:
+    print("Letter " + chara + " is not a Vowel")
+
+Vowel Tester
+Enter a character: A
+Letter A is a Vowel
+
+In [27]:print("Vowel Tester")
+chara = input("Enter a character: ")
+char = chara.lower()
+if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+    print("Letter " + chara + " is a Vowel")
+else:
+    print("Letter " + chara + " is not a Vowel")
+
+Vowel Tester
+Enter a character: e
+Letter e is a Vowel
+
+In [28]:print("Vowel Tester")
+chara = input("Enter a character: ")
+char = chara.lower()
+if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+    print("Letter " + chara + " is a Vowel")
+else:
+    print("Letter " + chara + " is not a Vowel")
+
+Vowel Tester
+Enter a character: N
+Letter N is not a Vowel
+
+8. Triangle area
+Write a Python program that will accept the base and height of a triangle and compute the area
+Reference:
+https://www.mathgoodies.com/lessons/vol1/area_triangle
+
+In [30]:print("Area of the triangle ==> ((1/2)*bh)")
+b = float(input("Enter the base value of triangle: "))
+h = float(input("Enter the height value of triangle: "))
+area = ((1/2) * b * h)
+print("Area of Triangle with base " + str(b) + " & height " + str(h) + " is " + str(area))
+
+Area of the triangle ==> ((1/2)*bh)
+Enter the base value of triangle: 10
+Enter the height value of triangle: 5
+Area of Triangle with base 10.0 & height 5.0 is 25.0
+
+
+9. Calculate Interest
+Write a Python program to compute the future value of a specified principal amount, rate of interest, and a number of years
+Program Console Sample 1:
+Please enter principal amount: 10000
+Please Enter Rate of interest in %: 0.1
+Enter number of years for investment: 5
+After 5 years your principal amount 10000 over an interest rate of 0.1 % will be 16105.1
+
+In [31]:print("Calculate Simple Interest")
+prinAmnt = int(input("Please Enter principal amount: "))
+intRate = float(input("Please Enter Rate of interest in %: "))
+years = int(input("Enter number of years for investment: "))
+si = (prinAmnt + intRate + years)/100
+print("After",years,"years your principal amount",prinAmnt,"over an interest rate of",intRate,"% will be",si)
+
+Calculate Simple Interest
+Please Enter principal amount: 10000
+Please Enter Rate of interest in %: 0.1
+Enter number of years for investment: 5
+After 5 years your principal amount 10000 over an interest rate of 0.1 % will be 100.051
+
+In [32]:print("Calculate Interest")
+prinAmnt = int(input("Please Enter principle amount: "))
+intRate = float(input("Please Enter Rate of interest in %: "))
+years = int(input("Enter number of years for investment: "))
+si = prinAmnt * (1 + (intRate * years))
+print("After",years,"years your principal amount",prinAmnt,"over an interest rate of",intRate,"% will be",si)
+
+Calculate Interest
+Please Enter principle amount: 10000
+Please Enter Rate of interest in %: 0.1
+Enter number of years for investment: 5
+After 5 years your principal amount 10000 over an interest rate of 0.1 % will be 15000.0
+
+10. Euclidean distance
+write a Python program to compute the distance between the points (x1, y1) and (x2, y2).
+Program Console Sample 1:
+Enter Co-ordinate for x1: 2
+Enter Co-ordinate for x2: 4
+Enter Co-ordinate for y1: 4
+Enter Co-ordinate for y2: 4
+Distance between points (2, 4) and (4, 4) is 2
+Reference:
+https://en.wikipedia.org/wiki/Euclidean_distance
+
+In [14]:print("Euclidean distance")
+import math
+x1 = int(input("Enter Co-ordinate for x1: "))
+x2 = int(input("Enter Co-ordinate for x2: "))
+y1 = int(input("Enter Co-ordinate for y1: "))
+y2 = int(input("Enter Co-ordinate for y2: "))
+dist = math.sqrt(((y1 - x1)*(y1 - x1)) + ((y2 - x2)*(y2 - x2)))
+print("Distance between points (" + str(x1) + "," + str(x2) + ") and (" + str(y1) + "," + str(y2) + ") is " + str(dist))
+
+
+Euclidean distance
+Enter Co-ordinate for x1: 2
+Enter Co-ordinate for x2: 4
+Enter Co-ordinate for y1: 4
+Enter Co-ordinate for y2: 4
+Distance between points (2,4) and (4,4) is 2.0
+
+11. Feet to Centimeter Converter
+Write a Python program to convert height in feet to centimetres.
+Program Console Sample 1:
+Enter Height in Feet: 5
+There are 152.4 Cm in 5 ft
+Reference:
+https://www.rapidtables.com/convert/length/feet-to-cm.html
+
+In [34]:print("Feet to Centimeter Converter")
+hgt = float(input("Enter Height in Feet: "))
+conv = hgt * 30.48
+print("There are " + str(conv) + " Cm in " + str(hgt) + " ft")
+
+Feet to Centimeter Converter
+Enter Height in Feet: 5
+There are 152.4 Cm in 5.0 ft
+
+12. BMI Calculator
+Write a Python program to calculate body mass index
+Program Console Sample 1:
+Enter Height in Cm: 180
+Enter Weight in Kg: 75
+Your BMI is 23.15
+
+In [40]:print("BMI Calculator")
+hgt = int(input("Enter Height in Cm: ")) / 100
+wgt = int(input("Enter Weight in Kg: "))
+bmi = (wgt / (hgt * hgt))
+print("Your BMI is " + str(bmi))
+
+BMI Calculator
+Enter Height in Cm: 180
+Enter Weight in Kg: 75
+Your BMI is 23.148148148148145
+
+13. Sum of n Positive Integers
+Write a python program to sum of the first n positive integers
+Program Console Sample 1:
+Enter value of n: 5
+Sum of n Positive integers till 5 is 15
+
+In [57]:print("Sum of n Positive Integers")
+value = int(input("Enter value of n: ")) + 1
+prevalue = 0
+for x in range(0, value, 1):
+    prevalue = prevalue + x
+print("Sum of n Positive integers till " + str(value - 1) + " is " + str(prevalue))
+
+Sum of n Positive Integers
+Enter value of n: 5
+Sum of n Positive integers till 5 is 15
+
+
+14. Digits Sum of a Number
+Write a Python program to calculate the sum of the digits in an integer
+Program Console Sample 1:
+Enter a number: 15
+Sum of 1 + 5 is 6
+Program Console Sample 2:
+Enter a number: 1234
+Sum of 1 + 2 + 3 + 4 is 10
+
+In [28]:n=int(input("Enter a number:"))
+tot=0
+var = []
+while(n>0):
+    dig=n%10
+    var.append(dig)
+    tot=tot+dig
+    n=n//10
+print("Sum of ",var[1],"+",var[0],"is:",tot)
+
+
+Enter a number:15
+Sum of  1 + 5 is: 6
+
+In [27]:n=int(input("Enter a number:"))
+tot=0
+var = []
+while(n>0):
+    dig=n%10
+    var.append(dig)
+    tot=tot+dig
+    n=n//10
+print("Sum of ",var[3],"+",var[2],"+",var[1],"+",var[0],"is:",tot)
+
+Enter a number:1234
+Sum of  1 + 2 + 3 + 4 is: 10
+
+
